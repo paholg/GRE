@@ -1,14 +1,12 @@
 \documentclass{article}
 \usepackage{amsmath}
+\usepackage[margin=1in]{geometry} %added margin control. feel free to change back to how it was by commenting this line.
 \setlength\parindent{0pt}
+
 \begin{document}
 \title{GRE Equation Sheet}
-\author{Mattson Thieme\and Rene Zeto \and Steve Ellefson}
+\author{Mattson Thieme \and Rene Zeto \and Steve Ellefson}
 \maketitle
-
-
-
-
 
 
 
@@ -23,13 +21,13 @@ Momentum\begin{equation}\frac{kg*m}{s}\end{equation}
 
 
 \section{Classical Mechanics}
-3D Wave Equation\begin{equation}\frac{1}{v^2} \frac{\partial^2\psi}{dt}= \nabla^2 \psi \end{equation}
+3D Wave Equation\begin{equation}\frac{1}{v^2} \frac{\partial^2\psi}{\partial t}= \nabla^2 \psi \end{equation}
 
 \begin{equation}v=\sqrt{\frac{\tau}{\mu}},  \tau=tension, \mu=mass density \end{equation}
 
-Traveling Waves\begin{equation}Asin(kx+\omega t + \phi_0)+Bsin(kx+\omega t +\phi_0)\end{equation}
+Traveling Waves\begin{equation}A\sin(kx+\omega t + \phi_0)+B\sin(kx+\omega t +\phi_0)\end{equation}
 
-Standing Waves\begin{equation}Asin(kx)sin(\omega t+\phi_0)+Bcos(kx)cos(\omega t+\phi_0)\end{equation}
+Standing Waves\begin{equation}A\sin(kx)\sin(\omega t+\phi_0)+B\cos(kx)\cos(\omega t+\phi_0)\end{equation}
 
 Quality factor\begin{equation}Q=\frac{\omega}{2\beta}=2\pi \frac{energy-lost}{energy-stored}\end{equation}
 $\Rightarrow$where $\beta$ is the half width max height? Half height max width? words
@@ -42,7 +40,13 @@ $\Rightarrow$Where $I_0 = 10^{-12} \frac{watts}{m^2}$
 Elastic Collisions\begin{equation}V_{f1}=V_{i1}(\frac{m_1-m_2}{m_1+m_2})+V_{i2}(\frac{2m_2}{m_1+m_2})\end{equation}
 \begin{equation}V_{f2}=V_{i1}(\frac{2m_1}{m_1+m_2})+V_{i2}(\frac{m_2-m_1}{m_1+m_2})\end{equation}
 
+Parallel Axis Theorem
+\begin{equation}
+  I_p = I_{cm} + Mh^2
+\end{equation}
+Where M is the mass of the object (?), and h is the distance between the center of mass and the pivot point p. 
 
+Impulse\begin{equation}I = \int_{t_i}^{t_f} Fdt = \Delta p = J \end{equation}
 
 
 
@@ -60,7 +64,14 @@ Elastic Collisions\begin{equation}V_{f1}=V_{i1}(\frac{m_1-m_2}{m_1+m_2})+V_{i2}(
 
 
 \section{E/M}
-Maxwell's Equations in Differential form
+Maxwell's Equations in Differential form 
+%mattson: there's some useful formatting stuff for vectors in latex
+%incase you didn't know about them. here's an example:
+
+%% \begin{equation}
+%%   \vec{\nabla} \cdot \vec{E} = \frac{\rho(\vec{r})}{\epsilon_0}
+%% \end{equation}
+
 \begin{equation}\nabla \circ E=\frac{\rho}{\epsilon_0}\end{equation}
 \begin{equation}\nabla \times B=\mu_0 J + \frac{dE}{dt}\end{equation}
 \begin{equation}\nabla \times E=-\frac{dB}{dt}\end{equation}
@@ -71,6 +82,21 @@ Maxwell's Equations in Integral form
 \begin{equation}\int B \circ dA=0\end{equation}
 \begin{equation}\int E \circ dr=-\frac{\partial}{\partial t}\int B \circ dA \end{equation}
 \begin{equation}\int B \circ dr=\mu_0 \int J \circ dA + \epsilon_0 \int \frac{dE}{dt}\circ dA\end{equation}
+
+Force on Charge particles\begin{equation}F=q(E+V\times B)\end{equation}
+
+Force density\begin{equation}F=\rho E + J\times V\end{equation}
+
+Field Energy density\begin{equation}=\frac{1}{2} (\epsilon_0 E^2 + \frac{1}{\mu_0 B^2})\end{equation}
+
+$\vec{P}$ density \begin{equation}\epsilon_0 E \times B = \epsilon_0 \mu_0 \vec{S}\end{equation}
+
+$\vec{L}$ density\begin{equation}\vec{r}\times (\epsilon_0 E \times B)\end{equation}
+
+E field from point charge\begin{equation}E=\frac{kq}{(r-r_0)^2}\end{equation}
+
+Potential from point charge\begin{equation}V=\frac{kq}{r-r_0}\end{equation}
+
 
 
 
@@ -106,11 +132,11 @@ Physical Pendulum\begin{equation}\omega = \sqrt{\frac{g}{L}}.....T=2\pi \sqrt{\f
 
 Vibrations on a String:
 
-Fixed-Fixed\begin{equation}Asin(kx)cos(\omega t + \phi_0), k = \frac{n\pi}{L}\end{equation}
+Fixed-Fixed\begin{equation}A\sin(kx)\cos(\omega t + \phi_0), k = \frac{n\pi}{L}\end{equation}
 
-Fixed-Free\begin{equation}Asin(kx)cos(\omega t+\phi_0), k = \frac{(2n+1)\pi}{L}\end{equation}
+Fixed-Free\begin{equation}A\sin(kx)\cos(\omega t+\phi_0), k = \frac{(2n+1)\pi}{L}\end{equation}
 
-Free-Free\begin{equation}Asin(kx)cos(\omega t + \phi_0), k= \frac{n\pi}{L}\end{equation}
+Free-Free\begin{equation}A\sin(kx)\cos(\omega t + \phi_0), k= \frac{n\pi}{L}\end{equation}
 
 
 \section{Wave Optics}
@@ -133,7 +159,7 @@ Free-Free\begin{equation}Asin(kx)cos(\omega t + \phi_0), k= \frac{n\pi}{L}\end{e
 
 
 \section{Laboratory and Electronics}
-Polarized Light through Polarizer\begin{equation}I_{transmitted} = I_0cos^2(\theta)\end{equation}
+Polarized Light through Polarizer\begin{equation}I_{transmitted} = I_0\cos^2(\theta)\end{equation}
 
 Non-Polarized Light through Polarizer\begin{equation}I_{transmitted}=\frac{1}{2}I_0\end{equation}
 
@@ -178,10 +204,8 @@ $\Rightarrow$ I still haven't the foggiest idea what this means
   Reflection & Parity\\
 \end{tabular}
 
-
-
-
-
+${\bf General Fourier}$ \begin{equation}a_n=\int_0^T sin(\frac{n\pi}{L}x)f(x)dx\end{equation}
+\begin{equation}f(x)=\sum_0^{\infty} a_n sin(n x)\end{equation}
 
 
 
@@ -231,6 +255,7 @@ $\Rightarrow$ k=$\frac{1}{4\pi \epsilon_0}=8.987\times10^{9} Nm^2/C^2$
 
 Permeability of free space $\mu_0=4\pi \times10^{-7}Nm^2/A m$
 
+$\frac{1}{\epsilon_0 \mu_0} = c^2$
 
 
 
