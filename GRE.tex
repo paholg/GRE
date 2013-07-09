@@ -25,14 +25,51 @@ Power\begin{equation}\frac{J}{s}\end{equation}
 
 
 \section{Classical Mechanics}
+\subsection{Linear Mechanics}
+\begin{equation}\Sigma F_{ext} = \frac{\delta \vec{p}}{\delta t} = m\vec{a}_{com}\end{equation}
+For constant acceleration:
+\begin{equation}V_{f} = V_{i} + a\Delta t\end{equation}
+\begin{equation}\Delta x = V_{i} \Delta t + \frac{1}{2}a\Delta t\end{equation}
+\begin{equation}V_{f}^2 = V_{i}^2 + 2a\Delta x\end{equation}
+Translational Kinetic Energy
+\begin{equation}K_{t} = \frac{1}{2}mv^2\end{equation}
+Linear Momentum
+\begin{equation}p = m\vec{v}\end{equation}
+
+\subsection{Rotational Mechanics}
+\begin{equation}\Sigma \tau _{ext} = \frac{\delta \vec{L}}{\delta t} = I\vec{\alpha}\end{equation}
+For constant angular acceleration:
+\begin{equation}\omega_{f} = \omega_{i} + \alpha\Delta t\end{equation}
+\begin{equation}\Delta \theta = \omega_{i} \Delta t + \frac{1}{2}\alpha\Delta t\end{equation}
+\begin{equation}\omega_{f}^2 = \omega_{i}^2 + 2\alpha\Delta \theta\end{equation}
+
+\subsection{Fluids}
+\begin{equation}Pressure = \frac{Force}{Area}\end{equation}
+Pressure at Depth
+\begin{equation}P_{1} = P_{0} + \rho gh\end{equation}
+Hydraulic Lift\\For same height\begin{equation} \frac{F_{1}}{A_{1}} = \frac{F_{2}}{A_{2}} \end{equation}
+To lift $A_{2}$ by distance $d_{2}$, $F_{1}$ must be increased by
+ \begin{equation} \Delta F_{1} = \rho g(A_{1} + A_{2})d_{2}\end{equation}
+ Buouyancy
+ \begin{equation}F_{B} = \rho_{fluid}V_{displaced}g\end{equation}
+ Volumetric Flow Rate
+  \begin{equation}Q = Area*Velocity\end{equation}
+  Continuity Equation (Conservation of Flow)
+  \begin{equation}\Sigma Q_{in} = \Sigma Q_{out} \end{equation}
+  \begin{equation}Volume = Area*Velocity*\Delta t = Q\Delta t\end{equation}
+Bernoulli's Equation
+ \begin{equation}P_{1} + \frac{1}{2}\rho v_{i}^2 + \rho gy_{i} =P_{2} + \frac{1}{2}\rho v_{f}^2 + \rho gy_{f}\end{equation}
+
+\subsection{Waves}
 3D Wave Equation\begin{equation}\frac{1}{v^2} \frac{\partial^2\psi}{\partial t}= \nabla^2 \psi \end{equation}
 
 \begin{equation}v=\sqrt{\frac{\tau}{\mu}},  \tau=tension, \mu=mass density \end{equation}
 
 Traveling Waves\begin{equation}A\sin(kx+\omega t + \phi_0)+B\sin(kx+\omega t +\phi_0)\end{equation}
 
-Amplitude = A
-Velocity\begin{equation}\vec{V}=\frac{\omega}{k}\end{equation}
+Amplitude = A\\\\
+Phase Velocity\begin{equation}\vec{V}=\frac{\vec{\omega}}{k}\end{equation}
+Group Velocity\begin{equation}\vec{V}=\frac{\delta \vec{\omega}}{\delta k}\end{equation}
 Angular Frequency\begin{equation}\omega = 2\pi f \end{equation}
 Wave vector\begin{equation}k = \frac{2\pi}{\lambda}\end{equation}
 Period\begin{equation} T = \frac{2\pi}{\omega}\end{equation}
@@ -40,7 +77,7 @@ Period\begin{equation} T = \frac{2\pi}{\omega}\end{equation}
 Standing Waves\begin{equation}A\sin(kx)\sin(\omega t+\phi_0)+B\cos(kx)\cos(\omega t+\phi_0)\end{equation}
 
 Quality factor\begin{equation}Q=\frac{\omega}{2\beta}=2\pi \frac{energy-lost}{energy-stored}\end{equation}
-$\Rightarrow$where $\beta$ is the half width max height? Half height max width? words
+$\Rightarrow$where $\beta$ is Full Width at Half Maximum
 
 Beat Frequency\begin{equation}f_B=|f_1-f_2|.....T_B = \frac{1}{f_B}\end{equation}
 
@@ -52,12 +89,6 @@ $\Rightarrow$ where s is the speed of sound, v speed of source.  **Note: the rig
 
 Elastic Collisions\begin{equation}V_{f1}=V_{i1}(\frac{m_1-m_2}{m_1+m_2})+V_{i2}(\frac{2m_2}{m_1+m_2})\end{equation}
 \begin{equation}V_{f2}=V_{i1}(\frac{2m_1}{m_1+m_2})+V_{i2}(\frac{m_2-m_1}{m_1+m_2})\end{equation}
-
-Parallel Axis Theorem
-\begin{equation}
-  I_p = I_{cm} + Mh^2
-\end{equation}
-Where M is the mass of the object (?), and h is the distance between the center of mass and the pivot point p. 
 
 Impulse\begin{equation}I = \int_{t_i}^{t_f} Fdt = \Delta p = J \end{equation}
 
