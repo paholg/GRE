@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage{amsmath}
-\usepackage[margin=.5in]{geometry} %added margin control. feel free to change back to how it was by commenting this line.
+\usepackage[margin=.5in]{geometry}
 \setlength\parindent{0pt}
 
 \begin{document}
@@ -148,12 +148,54 @@ $\Rightarrow$ Equations 3 and 4 are ``Sourcefull'' while 5 and 6 are ``Source fr
 
 
 
-\section{Thermal Physics}
+\section{Thermal Physics} %and stat mech? 
+{\bf Fermi-Dirac statistics}
+\begin{equation}
+  \dfrac{1}{\exp\left({\dfrac{\epsilon-\mu}{\tau}}\right)+1} < 1
+\end{equation}
+{\bf Bose-Einstein statistics}
+\begin{equation}
+  \dfrac{1}{\exp\left({\dfrac{\epsilon-\mu}{\tau}}\right)+1} \qquad \textrm{is unbounded}
+\end{equation}
+{\bf Photon}
+\begin{equation}
+  \dfrac{1}{\exp\left({\dfrac{\epsilon-\mu}{\tau}}\right)-1} \qquad \mu=0, \epsilon=\hbar\omega
+\end{equation}
+{\bf Maxwell-Boltzmann statistics}
+\begin{equation}
+  \exp{\left(-\frac{\epsilon-\mu}{\tau}\right)} < 1
+\end{equation}
 
+{\bf Bose-Einstein relations}
+\begin{gather}
+  D(\epsilon) \alpha \epsilon^{\frac{1}{2}} \\
+  U \alpha T^{\frac{5}{2}}
+  C_V \alpha T^{\frac{3}{2}}
+\end{gather}
+  
+{\bf Equipartition Theorem}
+\begin{equation}
+  U = \frac{1}{2}Nk_{B}T \qquad \textrm{per degree of freedom}
+\end{equation}
 
+{\bf Van der Wals}
+\begin{equation}
+  \left(p + n^2\frac{a}{V^2}\right)\left(V-nb\right) = Nk_BT \qquad \textrm{n in moles}
+\end{equation}
 
+{\bf Ideal gas properties} %maybe explain later
+\begin{gather}
+  pV = Nk_bT \\
+  U = \frac{3}{2}Nk_BT \\
+  \frac{\partial U}{\partial T} = \frac{3}{2}Nk_B \\
+  S = Nk_B\ln\left(\left(\frac{T}{T_0}\right)^{\frac{3}{2}}\frac{V}{V_0}\right) + S_0
+\end{gather}
 
-
+{\bf Density of states}
+\begin{gather}
+  \left(\frac{L}{2\pi\hbar}\right)^3\int 4\pi p^2 dp \qquad \textrm{or, with a change of variables} \\
+  \left(\frac{L}{2\pi\hbar}\right)^3\int 4\pi \left(2m\right)^{\frac{3}{2}}\frac{\epsilon^{\frac{1}{2}}}{2} d\epsilon \qquad \textrm{since $L^3 = V$}
+\end{gather}
 
 
 
