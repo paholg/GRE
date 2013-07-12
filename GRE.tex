@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage{amsmath}
-\usepackage[margin=1in]{geometry} %added margin control. feel free to change back to how it was by commenting this line.
+\usepackage[margin=.5in]{geometry}
 \setlength\parindent{0pt}
 
 \begin{document}
@@ -9,11 +9,15 @@
 \maketitle
 
 
-
-\section{Dimensions}
+\section{Dimensions} Some of these are in SI units, more intuitive.\\
+\\
 Energy\begin{equation}\frac{kg*m^2}{s^2}
 \end{equation} 
 Momentum\begin{equation}\frac{kg*m}{s}\end{equation}
+Volts\begin{equation}\frac{J}{c}\end{equation}
+Current\begin{equation}\frac{c}{s}\end{equation}
+Z from Ohm's law for AC current\begin{equation}\frac{Js}{c^2}\end{equation}
+Power\begin{equation}\frac{J}{s}\end{equation}
 
 
 
@@ -21,50 +25,87 @@ Momentum\begin{equation}\frac{kg*m}{s}\end{equation}
 
 
 \section{Classical Mechanics}
-3D Wave Equation\begin{equation}\frac{1}{v^2} \frac{\partial^2\psi}{\partial t}= \nabla^2 \psi \end{equation}
+{\bf{3D Wave Equation}}\begin{equation}\frac{1}{v^2} \frac{\partial^2\psi}{\partial t}= \nabla^2 \psi \end{equation}
 
 \begin{equation}v=\sqrt{\frac{\tau}{\mu}},  \tau=tension, \mu=mass density \end{equation}
 
-Traveling Waves\begin{equation}A\sin(kx+\omega t + \phi_0)+B\sin(kx+\omega t +\phi_0)\end{equation}
+{\bf{Traveling Waves}}\begin{equation}A\sin(kx+\omega t + \phi_0)+B\sin(kx+\omega t +\phi_0)\end{equation}
 
-Standing Waves\begin{equation}A\sin(kx)\sin(\omega t+\phi_0)+B\cos(kx)\cos(\omega t+\phi_0)\end{equation}
+\hspace*{.5in}Amplitude = A\\
+\hspace*{.5in}Velocity\begin{equation}\vec{V}=\frac{\omega}{k}\end{equation}
+\hspace*{.5in}Angular Frequency\begin{equation}\omega = 2\pi f \end{equation}
+\hspace*{.5in}Wave vector\begin{equation}k = \frac{2\pi}{\lambda}\end{equation}
+\hspace*{.5in}Period\begin{equation} T = \frac{2\pi}{\omega}\end{equation}
 
-Quality factor\begin{equation}Q=\frac{\omega}{2\beta}=2\pi \frac{energy-lost}{energy-stored}\end{equation}
-$\Rightarrow$where $\beta$ is the half width max height? Half height max width? words
+{{\bf{Standing Waves}}\begin{equation}A\sin(kx)\sin(\omega t+\phi_0)+B\cos(kx)\cos(\omega t+\phi_0)\end{equation}
 
-Beat Frequency\begin{equation}f_B=|f_1-f_2|.....T_B = \frac{1}{f_B}\end{equation}
+{\bf{Quality factor}}\begin{equation}Q=\frac{\omega}{2\beta}=2\pi \frac{energy-lost}{energy-stored}\end{equation}
+$\hspace*{.5in}$where $\beta$ is the half width max height? Half height max width? words
+\\
+\\
+{\bf{Beat Frequency}}\begin{equation}f_B=|f_1-f_2|.....T_B = \frac{1}{f_B}\end{equation}
 
-Decibels(measured as Intensity {\bf above} threshold of human hearing at 1000 Hz)\begin{equation}I(dB)=10log_{10}\frac{I}{I_0}\end{equation}
-$\Rightarrow$Where $I_0 = 10^{-12} \frac{watts}{m^2}$
-
-Elastic Collisions\begin{equation}V_{f1}=V_{i1}(\frac{m_1-m_2}{m_1+m_2})+V_{i2}(\frac{2m_2}{m_1+m_2})\end{equation}
+{\bf{Decibels}}(measured as Intensity above threshold of human hearing at 1000 Hz)\begin{equation}I(dB)=10log_{10}\frac{I}{I_0}\end{equation}
+$\Rightarrow$Where $I_0 = 10^{-12} \frac{watts}{m^2}$\\
+\\
+{\bf{Sonic Boom}}\begin{equation}\sin{\theta} = \frac{s}{v}\end{equation}
+$\Rightarrow$ where s is the speed of sound, v speed of source.  **Note: the right angle when drawing this diagram is with respect to the wave front, not the path of the source.\\
+\\
+{\bf{Elastic Collisions}}\begin{equation}V_{f1}=V_{i1}(\frac{m_1-m_2}{m_1+m_2})+V_{i2}(\frac{2m_2}{m_1+m_2})\end{equation}
 \begin{equation}V_{f2}=V_{i1}(\frac{2m_1}{m_1+m_2})+V_{i2}(\frac{m_2-m_1}{m_1+m_2})\end{equation}
 
-Parallel Axis Theorem
+{\bf{Parallel Axis Theorem}}
 \begin{equation}
   I_p = I_{cm} + Mh^2
 \end{equation}
-Where M is the mass of the object (?), and h is the distance between the center of mass and the pivot point p. 
+$\hspace*{.5in}$Where M is the mass of the object (?), and h is the distance between the center of mass and the pivot point p. 
 
-Impulse\begin{equation}I = \int_{t_i}^{t_f} Fdt = \Delta p = J \end{equation}
+{\bf{Impulse}}\begin{equation}I = \int_{t_i}^{t_f} Fdt = \Delta p = J \end{equation}
 
+{\bf{Bragg's Law}}\begin{equation} m\lambda = 2d\sin{\theta}\end{equation}
+$\Rightarrow$where m = 1,2,3...\\
+\\
+{\bf{Diffraction Grating}}\begin{equation}d(\sin{\theta}-\sin{\theta_i}) = m\lambda \end{equation}
+\begin{equation}d = \frac{1}{N}\end{equation}
+\hspace*{.5in}for normally incident:
+\begin{equation}d\sin{\theta} = m\lambda\end{equation}
+$\Rightarrow$ where m = 1,2,3... and N = number of slits per unit length\\
+\\
+{\bf{Pinhole Camera}}, optimal pinhole diameter:\begin{equation}\sqrt{f\lambda}\end{equation}
+$\Rightarrow$ where f is the focal length NOT the frequency\\
+\\
+{\bf{Light Phase Shift at a boundary}}: Low index of refraction to high phase shift of $\pi$.  High to low no phase shift.
 
+{\bf{Focal lengths}}\begin{equation}\frac{1}{S_o}+\frac{1}{S_i} = \frac{1}{f}\end{equation}
+$\Rightarrow$ where $S_o$ is the distance to the object, $S_i$ the distance to the image.\\
+\\
+{\bf{Ohm's Law for AC Current}}\begin{equation}V = IZ\end{equation}
+\begin{equation}Z = X + R\end{equation}
+$\Rightarrow$ where X = reactance and R = resistance\\
+\\
+{\bf{Power dissapated - AC current}}\begin{equation}P = IV\cos{\phi}\end{equation}
+$\Rightarrow$ where $\phi$ is the phase difference between the voltage and current 
 
 
 
 
 \section{Quantum}
+{\bf{Average values of bang gaps}}: Conductor ~1eV, Insulator ~10eV.\\
 
 
 
 
 
+
+{\bf{Notes:}}\\
+\hspace*{.5in}An $\emph{extrinsic}$ semi-conductor is one which has been n-type doped with electrons.\\
+\hspace*{.5in}And $\emph{intrinsic}$ semi-conductor is one which has not been doped.
 
 
 
 
 \section{E/M}
-Maxwell's Equations in Differential form 
+\{\bf{Maxwell's Equations in Differential form}} 
 %mattson: there's some useful formatting stuff for vectors in latex
 %incase you didn't know about them. here's an example:
 
@@ -76,28 +117,27 @@ Maxwell's Equations in Differential form
 \begin{equation}\nabla \times B=\mu_0 J + \frac{dE}{dt}\end{equation}
 \begin{equation}\nabla \times E=-\frac{dB}{dt}\end{equation}
 \begin{equation}\nabla \circ B=0\end{equation}
-$\Rightarrow$ Equations 3 and 4 are ``Sourcefull'' while 5 and 6 are ``Source free''
-Maxwell's Equations in Integral form
+$\Rightarrow$ Equations 3 and 4 are ``Sourcefull'' while 5 and 6 are ``Source free''\\
+\\
+{\bf{Maxwell's Equations in Integral form}}
 \begin{equation}\int E \circ dA=\frac{q_{enc}}{\epsilon}\end{equation}
 \begin{equation}\int B \circ dA=0\end{equation}
 \begin{equation}\int E \circ dr=-\frac{\partial}{\partial t}\int B \circ dA \end{equation}
 \begin{equation}\int B \circ dr=\mu_0 \int J \circ dA + \epsilon_0 \int \frac{dE}{dt}\circ dA\end{equation}
 
-Force on Charge particles\begin{equation}F=q(E+V\times B)\end{equation}
+{\bf{Force on Charge particles}}\begin{equation}F=q(E+V\times B)\end{equation}
 
-Force density\begin{equation}F=\rho E + J\times V\end{equation}
+{\bf{Force density}}\begin{equation}F=\rho E + J\times V\end{equation}
 
-Field Energy density\begin{equation}=\frac{1}{2} (\epsilon_0 E^2 + \frac{1}{\mu_0 B^2})\end{equation}
+{\bf{Field Energy density}}\begin{equation}=\frac{1}{2} (\epsilon_0 E^2 + \frac{1}{\mu_0 B^2})\end{equation}
 
-$\vec{P}$ density \begin{equation}\epsilon_0 E \times B = \epsilon_0 \mu_0 \vec{S}\end{equation}
+{\bf{$\vec{P}$ density}} \begin{equation}\epsilon_0 E \times B = \epsilon_0 \mu_0 \vec{S}\end{equation}
 
-$\vec{L}$ density\begin{equation}\vec{r}\times (\epsilon_0 E \times B)\end{equation}
+{\bf{$\vec{L}$ density}}\begin{equation}\vec{r}\times (\epsilon_0 E \times B)\end{equation}
 
-E field from point charge\begin{equation}E=\frac{kq}{(r-r_0)^2}\end{equation}
+{\bf{E field from point charge}}\begin{equation}E=\frac{kq}{(r-r_0)^2}\end{equation}
 
-Potential from point charge\begin{equation}V=\frac{kq}{r-r_0}\end{equation}
-
-
+{\bf{Potential from point charge}}\begin{equation}V=\frac{kq}{r-r_0}\end{equation}
 
 
 
@@ -106,12 +146,56 @@ Potential from point charge\begin{equation}V=\frac{kq}{r-r_0}\end{equation}
 
 
 
-\section{Thermal Physics}
 
 
+\section{Thermal Physics} %and stat mech? 
+{\bf Fermi-Dirac statistics}
+\begin{equation}
+  \dfrac{1}{\exp\left({\dfrac{\epsilon-\mu}{\tau}}\right)+1} < 1
+\end{equation}
+{\bf Bose-Einstein statistics}
+\begin{equation}
+  \dfrac{1}{\exp\left({\dfrac{\epsilon-\mu}{\tau}}\right)+1} \qquad \textrm{is unbounded}
+\end{equation}
+{\bf Photon}
+\begin{equation}
+  \dfrac{1}{\exp\left({\dfrac{\epsilon-\mu}{\tau}}\right)-1} \qquad \mu=0, \epsilon=\hbar\omega
+\end{equation}
+{\bf Maxwell-Boltzmann statistics}
+\begin{equation}
+  \exp{\left(-\frac{\epsilon-\mu}{\tau}\right)} < 1
+\end{equation}
 
+{\bf Bose-Einstein relations}
+\begin{gather}
+  D(\epsilon) \alpha \epsilon^{\frac{1}{2}} \\
+  U \alpha T^{\frac{5}{2}}
+  C_V \alpha T^{\frac{3}{2}}
+\end{gather}
+  
+{\bf Equipartition Theorem}
+\begin{equation}
+  U = \frac{1}{2}Nk_{B}T \qquad \textrm{per degree of freedom}
+\end{equation}
 
+{\bf Van der Wals}
+\begin{equation}
+  \left(p + n^2\frac{a}{V^2}\right)\left(V-nb\right) = Nk_BT \qquad \textrm{n in moles}
+\end{equation}
 
+{\bf Ideal gas properties} %maybe explain later
+\begin{gather}
+  pV = Nk_bT \\
+  U = \frac{3}{2}Nk_BT \\
+  \frac{\partial U}{\partial T} = \frac{3}{2}Nk_B \\
+  S = Nk_B\ln\left(\left(\frac{T}{T_0}\right)^{\frac{3}{2}}\frac{V}{V_0}\right) + S_0
+\end{gather}
+
+{\bf Density of states}
+\begin{gather}
+  \left(\frac{L}{2\pi\hbar}\right)^3\int 4\pi p^2 dp \qquad \textrm{or, with a change of variables} \\
+  \left(\frac{L}{2\pi\hbar}\right)^3\int 4\pi \left(2m\right)^{\frac{3}{2}}\frac{\epsilon^{\frac{1}{2}}}{2} d\epsilon \qquad \textrm{since $L^3 = V$}
+\end{gather}
 
 
 
@@ -127,19 +211,21 @@ Potential from point charge\begin{equation}V=\frac{kq}{r-r_0}\end{equation}
 
 
 \section{Oscillations}
-Energy of an Oscillator\begin{equation}T+U=\frac{1}{2}mv^2 + \frac{1}{2}kx^2\end{equation}
-Physical Pendulum\begin{equation}\omega = \sqrt{\frac{g}{L}}.....T=2\pi \sqrt{\frac{L}{g}}\end{equation}
+{\bf{Energy of an Oscillator}}\begin{equation}T+U=\frac{1}{2}mv^2 + \frac{1}{2}kx^2\end{equation}
+{\bf{Physical Pendulum}}\begin{equation}\omega = \sqrt{\frac{g}{L}}.....T=2\pi \sqrt{\frac{L}{g}}\end{equation}
 
-Vibrations on a String:
+{\bf{Vibrations on a String:}}\\
+\\
+\hspace*{.5in}Fixed-Fixed\begin{equation}A\sin(kx)\cos(\omega t + \phi_0), k = \frac{n\pi}{L}\end{equation}
 
-Fixed-Fixed\begin{equation}A\sin(kx)\cos(\omega t + \phi_0), k = \frac{n\pi}{L}\end{equation}
+\hspace*{.5in}Fixed-Free\begin{equation}A\sin(kx)\cos(\omega t+\phi_0), k = \frac{(2n+1)\pi}{L}\end{equation}
 
-Fixed-Free\begin{equation}A\sin(kx)\cos(\omega t+\phi_0), k = \frac{(2n+1)\pi}{L}\end{equation}
-
-Free-Free\begin{equation}A\sin(kx)\cos(\omega t + \phi_0), k= \frac{n\pi}{L}\end{equation}
+\hspace*{.5in}Free-Free\begin{equation}A\sin(kx)\cos(\omega t + \phi_0), k= \frac{n\pi}{L}\end{equation}
 
 
 \section{Wave Optics}
+
+
 
 
 
@@ -211,7 +297,7 @@ ${\bf General Fourier}$ \begin{equation}a_n=\int_0^T sin(\frac{n\pi}{L}x)f(x)dx\
 
 
 \section{Cosmology}
-
+Need to know something about Star Sequences
 
 
 
